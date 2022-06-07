@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceServerGenerator", "DeviceServerGenerator\DeviceServerGenerator.csproj", "{18F0D6AD-5F3F-4E9A-91E0-3678E22D765D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{BD13B0AD-EBF8-44BF-BB81-D34BCA663547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{F4916F63-CED5-4F5F-BC87-A3F5CA28C8DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{18F0D6AD-5F3F-4E9A-91E0-3678E22D765D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18F0D6AD-5F3F-4E9A-91E0-3678E22D765D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18F0D6AD-5F3F-4E9A-91E0-3678E22D765D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD13B0AD-EBF8-44BF-BB81-D34BCA663547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD13B0AD-EBF8-44BF-BB81-D34BCA663547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD13B0AD-EBF8-44BF-BB81-D34BCA663547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD13B0AD-EBF8-44BF-BB81-D34BCA663547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4916F63-CED5-4F5F-BC87-A3F5CA28C8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4916F63-CED5-4F5F-BC87-A3F5CA28C8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4916F63-CED5-4F5F-BC87-A3F5CA28C8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4916F63-CED5-4F5F-BC87-A3F5CA28C8DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

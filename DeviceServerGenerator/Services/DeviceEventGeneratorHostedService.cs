@@ -1,9 +1,9 @@
 ﻿using DeviceDataGenerator.Data;
-using DeviceDataGenerator.Services.Interfaces;
-using DeviceDataGenerator.Settings;
+using DeviceServerGenerator.Services.Interfaces;
+using DeviceServerGenerator.Settings;
 using Microsoft.Extensions.Options;
 
-namespace DeviceDataGenerator;
+namespace DeviceServerGenerator.Services;
 
 public class DeviceEventGeneratorHostedService: BackgroundService
 {
@@ -44,10 +44,11 @@ public class DeviceEventGeneratorHostedService: BackgroundService
         var random = new Random();
         return new DeviceEvent()
         {
-            Humidity = random.Next(),
-            CarbonDioxideLevel = random.Next(),
-            Temperature = random.Next(),
-            Type = DeviceEventType.Inside
+            Humidity = random.Next(50,90),
+            CarbonDioxideLevel = random.Next(70,100),
+            Temperature = random.Next(15,40),
+            Type = (DeviceEventType)random.Next(1,3),
+            Created = DateTimeOffset.UtcNow
         };
     }
 }

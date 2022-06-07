@@ -1,4 +1,4 @@
-﻿namespace DeviceDataGenerator.Settings;
+﻿namespace DeviceServerGenerator.Settings;
 
 public sealed class DeviceEventGeneratorOptions
 {

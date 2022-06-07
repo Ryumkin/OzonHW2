@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcClient";
+
+package greet;
+import "google/protobuf/timestamp.proto";
+
+// The greeting service definition.
+service DeviceEventGrpcService {
+  // Sends a greeting
+  rpc GetDeviceEvents (DeviceEventRequest) returns (stream DeviceEventResponse);
+}
+
+// The request message containing the user's name.
+message DeviceEventRequest {
+  repeated DeviceType types = 1;
+}
+
+// The response message containing the greetings.
+message DeviceEventResponse {
+  int32 temperature = 1;
+  int32 humidity = 2;
+  int32 carbonDioxideLevel = 3;
+  DeviceType Type = 4;
+   google.protobuf.Timestamp created = 5;
+}
+
+enum DeviceType {
+  DEVICE_TYPE_UNKNOWN = 0;
+  DEVICE_TYPE_INSIDE= 1;
+  DEVICE_TYPE_OUTSIDE = 2;
+}

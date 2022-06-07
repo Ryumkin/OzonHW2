@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DeviceDataGenerator.Data;
-using DeviceDataGenerator.Services.Interfaces;
+using DeviceServerGenerator.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

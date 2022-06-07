@@ -1,9 +1,8 @@
 ﻿using System.Collections.Concurrent;
-using System.Collections.Immutable;
 using DeviceDataGenerator.Data;
-using DeviceDataGenerator.Services.Interfaces;
+using DeviceServerGenerator.Services.Interfaces;
 
-namespace DeviceDataGenerator;
+namespace DeviceServerGenerator.Services;
 
 public class DeviceService : IDeviceService
 {
@@ -20,6 +19,7 @@ public class DeviceService : IDeviceService
     {
         var queue = _data.GetValueOrDefault(deviceEvent.Type, new ConcurrentQueue<DeviceEvent>());
         queue.Enqueue(deviceEvent);
+        _data[deviceEvent.Type] = queue;
         _lastGeneratedData[deviceEvent.Type] = deviceEvent;
         _logger.LogInformation("Device @{DeviceEvent} was added to the storage", deviceEvent);
     }

@@ -7,4 +7,6 @@ public sealed class DeviceEvent
     public int CarbonDioxideLevel { get; set; }
 
     public DeviceEventType Type { get; set; }
+    
+    public DateTimeOffset Created { get; set; }
 }

@@ -1,6 +1,6 @@
 ﻿using DeviceDataGenerator.Data;
 
-namespace DeviceDataGenerator.Services.Interfaces;
+namespace DeviceServerGenerator.Services.Interfaces;
 
 public interface IDeviceService
 {
